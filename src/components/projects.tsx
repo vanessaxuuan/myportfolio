@@ -39,6 +39,27 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: "Smart Order Router Simulator",
+    description:
+      "Built a SaaS livestreaming platform, integrated order management sytem, live streaming system, real-time interactions (e.g. live chat) and secure payments.",
+    image: "/projects/sor-output.jpeg",
+    url: "https://github.com/vanessaxuuan/SOR-Simulator",
+    techStack: ["C", "HeapSort", "QuickSort"],
+    more: [
+      {
+        image: "/projects/SOR.jpeg",
+        description: "Engineered real-time analytics dashboard to help sellers optimize livestream engagement.",
+        status: "Completed",
+      },
+      {
+        image: "/projects/carts.jpeg",
+        description: "Built robust order management system supporting concurrent sellers.",
+        status: "Ongoing",
+      }
+    ]
+  },
+  {
+    id: 3,
     title: "Kompaz",
     description:
       "Collaborative task manager with live updates, designed for high-performing teams. Features real-time sync and shared boards for better task transparency.",
@@ -59,7 +80,7 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     title: "3D Landing Page",
     description:
       "Crafted an interactive 3D landing page for a marketing agency, combining animations and real-time 3D models to elevate brand perception.",
@@ -80,7 +101,7 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     title: "My Freelance Portfolio",
     description:
       "Showcased my creative and technical freelance projects using dynamic layouts and immersive scrolling experiences.",
@@ -101,7 +122,7 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     title: "Task Manager",
     description:
       "CLI-based task tracking desktop app built in Java, featuring persistence, command parsing, and file management.",
@@ -122,7 +143,7 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     title: "NFT Project",
     description:
       "Developed and deployed an Ethereum-based NFT collection of 88 unique assets with smart contracts and wallet integration.",
@@ -143,7 +164,7 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 7,
+    id: 8,
     title: "Landing Page: Vinifique",
     description:
       "Designed and deployed a sleek landing page for a boutique wine label, optimized for storytelling and conversion.",
@@ -164,7 +185,7 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 8,
+    id: 9,
     title: "Migration of E-commerce Website",
     description:
       "Migrated Akaso's ecommerce site from Vue to Shopify, optimizing store performance and ensuring seamless product transfers.",
@@ -185,7 +206,7 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 9,
+    id: 10,
     title: "Ecommerce Website: Wagacy",
     description:
       "Developed and optimized a CMS-based ecommerce site with a focus on SEO, user flow, and conversion insights.",
