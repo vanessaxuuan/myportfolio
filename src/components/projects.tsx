@@ -12,7 +12,7 @@ interface Project {
   image: string;
   url: string;
   techStack: string[];
-  more: { image: string; description: string; status: string }[];
+  more: { image: string; description: string; status: string; title: string }[];
 }
 
 const projects: Project[] = [
@@ -20,20 +20,22 @@ const projects: Project[] = [
     id: 1,
     title: "Livestreaming Platform",
     description:
-      "Built a SaaS livestreaming platform, integrated order management sytem, live streaming system, real-time interactions (e.g. live chat) and secure payments.",
+      "Built a SaaS livestreaming platform, integrated order management sytem, live streaming system, real-time interactions (e.g. live chat) and secure payments",
     image: "/projects/carts.jpeg",
     url: "https://spree.city",
-    techStack: ["React", "TypeScript", "Real-Time Integration", "PostgreSQL", "Tailwind CSS", "Jenkins (CI/CD automation)"],
+    techStack: ["Next.js", "Javascript", "Real-Time Integration", "API Integrations", "Tailwind CSS"],
     more: [
       {
         image: "/projects/all-chat.jpeg",
-        description: "Engineered real-time analytics dashboard to help sellers optimize livestream engagement.",
+        description: "Integrated live chats and real-time interaction tools (e.g. auction, bidding) to help sellers optimize livestream engagement",
         status: "Completed",
+        title: "Live Tools Integration"
       },
       {
         image: "/projects/carts.jpeg",
-        description: "Built robust order management system supporting concurrent sellers.",
+        description: "Built robust order management system with real-time inventory tracking, payment processing, and seamless API integration with backend services",
         status: "Completed",
+        title: "Order Management System"
       }
     ]
   },
@@ -41,41 +43,51 @@ const projects: Project[] = [
     id: 2,
     title: "Smart Order Router Simulator",
     description:
-      "Built a SaaS livestreaming platform, integrated order management sytem, live streaming system, real-time interactions (e.g. live chat) and secure payments.",
-    image: "/projects/sor-output.jpeg",
+      "Built a SOR simulator that evaluates multiple exchanges (live) to route client orders optimally based on price, volume, and latency",
+    image: "/projects/sor-out.png",
     url: "https://github.com/vanessaxuuan/SOR-Simulator",
-    techStack: ["C", "HeapSort", "QuickSort"],
+    techStack: ["C", "HeapSort", "QuickSort", "Multithreading"],
     more: [
       {
-        image: "/projects/SOR.jpeg",
-        description: "Engineered real-time analytics dashboard to help sellers optimize livestream engagement.",
-        status: "Completed",
+        image: "/projects/sor-live.png",
+        description: "Allow for real-time data from live exchanges to be used in the simulator",
+        status: "Ongoing",
+        title: "Real-Time Data Integration"
       },
       {
-        image: "/projects/carts.jpeg",
-        description: "Built robust order management system supporting concurrent sellers.",
+        image: "/projects/sor-threads.png",
+        description: "Implemented multithreading to simultaneously evaluate and rank exchanges based on weighted factors including price, volume, and latency metrics",
         status: "Ongoing",
+        title: "Multithreading and Order routing"
+      },
+      {
+        image: "/projects/SOR.jpeg",
+        description: "An effort to deepen understanding of the technicalities of investment banking systems",
+        status: "Ongoing",
+        title: "Brainstorming"
       }
     ]
   },
   {
     id: 3,
-    title: "Kompaz",
+    title: "Collaborative Trip Planner",
     description:
-      "Collaborative task manager with live updates, designed for high-performing teams. Features real-time sync and shared boards for better task transparency.",
+      "Designed to make trip planning as enjoyable as the trip itself",
     image: "/projects/kompaz1.jpg",
-    url: "https://github.com/yourusername/taskmanager",
-    techStack: ["React", "NextJS", "Python", "SQL", "Tailwind CSS"],
+    url: "#",
+    techStack: ["Next.js", "SQL", "Tailwind CSS"],
     more: [
       {
         image: "/projects/kompaz1.jpg",
-        description: "Built notification system and real-time data sync using WebSockets.",
+        description: "Architected and implemented the frontend infrastructure, developing core components and user interface elements",
         status: "In Progress",
+        title: "Frontend Development"
       },
       {
         image: "/projects/kompaz2.jpg",
-        description: "Designed collaborative board view for seamless team task tracking.",
+        description: "Collaborating with backend team to design scalable system architecture for future frontend integration",
         status: "In Progress",
+        title: "Backend Design"
       }
     ]
   },
@@ -83,20 +95,22 @@ const projects: Project[] = [
     id: 4,
     title: "3D Landing Page",
     description:
-      "Crafted an interactive 3D landing page for a marketing agency, combining animations and real-time 3D models to elevate brand perception.",
+      "Developed an interactive 3D landing page for a marketing agency, combining animations and 3D models to elevate brand perception",
     image: "/projects/goc1.png",
     url: "https://globaloneclick.com",
     techStack: ["Javascript", "ThreeJS", "Blender", "3D Rendering", "GSAP"],
     more: [
       {
         image: "/projects/goc1.png",
-        description: "Implemented smooth loading and scroll animations with GSAP for optimal UX.",
+        description: "As part of my internship project - Implemented smooth loading and scroll animations with GSAP for optimal UX",
         status: "Completed",
+        title: "UX Optimization"
       },
       {
         image: "/projects/goc2.png",
-        description: "Modeled and animated branded 3D assets using Blender and ThreeJS.",
+        description: "Modeled and animated branded 3D assets using Blender and ThreeJS",
         status: "Completed",
+        title: "3D Model Creation"
       }
     ]
   },
@@ -104,20 +118,22 @@ const projects: Project[] = [
     id: 5,
     title: "My Freelance Portfolio",
     description:
-      "Showcased my creative and technical freelance projects using dynamic layouts and immersive scrolling experiences.",
+      "Showcased my creative and technical freelance projects using dynamic layouts and immersive scrolling experiences (Mobile version coming soon)",
     image: "/projects/capfirst.png",
     url: "https://capsulated.vercel.app",
     techStack: ["NextJS", "GSAP", "Tailwind CSS", "Typescript"],
     more: [
       {
         image: "/projects/capfirst.png",
-        description: "Leveraged GSAP and horizontal scroll to create an immersive portfolio narrative.",
+        description: "Leveraged GSAP and horizontal scroll to create an immersive portfolio narrative",
         status: "Completed",
+        title: "Immersive Narrative"
       },
       {
         image: "/projects/capmain.png",
-        description: "Continuously updating with new creative works and case studies.",
+        description: "Continuously updating with new creative works and case studies",
         status: "Ongoing",
+        title: "Creative Works"
       }
     ]
   },
@@ -125,20 +141,22 @@ const projects: Project[] = [
     id: 6,
     title: "Task Manager",
     description:
-      "CLI-based task tracking desktop app built in Java, featuring persistence, command parsing, and file management.",
+      "CLI-based task tracking desktop app built in Java, featuring command parsing and persistent data storage",
     image: "/projects/gary1.png",
     url: "https://github.com/vanessaxuuan/ip?tab=readme-ov-file",
-    techStack: ["Java", "Shell", "Batchfile", "Gradle"],
+    techStack: ["Java", "Gradle", "CLI Development"],
     more: [
       {
         image: "/projects/gary1.png",
-        description: "Created a minimalist onboarding CLI interface for users.",
+        description: "Created a minimalist onboarding CLI interface for users",
         status: "Completed",
+        title: "Onboarding Interface"
       },
       {
         image: "/projects/gary2.png",
-        description: "Enabled persistent task storage with data serialization.",
+        description: "Enabled persistent task storage",
         status: "Completed",
+        title: "Persistent Storage"
       }
     ]
   },
@@ -146,20 +164,22 @@ const projects: Project[] = [
     id: 7,
     title: "NFT Project",
     description:
-      "Developed and deployed an Ethereum-based NFT collection of 88 unique assets with smart contracts and wallet integration.",
+      "Contributed to the development and deployment of an Ethereum-based NFT collection of 88 unique assets with smart contracts and wallet integration",
     image: "/projects/nft1.png",
     url: "#",
-    techStack: ["Solidity", "Javascript", "React", "Hardhat", "ERC721"],
+    techStack: ["Solidity", "Hardhat", "Web3.js", "React"],
     more: [
       {
         image: "/projects/nft1.png",
-        description: "Integrated MetaMask wallet for seamless user minting and transaction flow.",
+        description: "Integrated MetaMask wallet for seamless user minting and transaction flow",
         status: "Completed",
+        title: "Wallet Integration"
       },
       {
         image: "/projects/nft2.png",
-        description: "Wrote and deployed ERC721-compliant smart contracts using Hardhat.",
+        description: "Developed and deployed ERC721-compliant smart contracts using Hardhat with comprehensive testing",
         status: "Completed",
+        title: "Smart Contracts"
       }
     ]
   },
@@ -167,20 +187,22 @@ const projects: Project[] = [
     id: 8,
     title: "Landing Page: Vinifique",
     description:
-      "Designed and deployed a sleek landing page for a boutique wine label, optimized for storytelling and conversion.",
+      "A curated wine collection presented in an interactive, creative menu-style layout",
     image: "/projects/vin1.png",
     url: "https://www.vinifique.co",
     techStack: ["NextJS", "Firebase", "Vercel"],
     more: [
       {
         image: "/projects/vin1.png",
-        description: "Built a dynamic wine menu with Firebase CMS integration.",
+        description: "Integrated Firebase for a dynamic wine menu",
         status: "Completed",
+        title: "Firebase Integration"
       },
       {
         image: "/projects/vin2.png",
-        description: "Collaborated closely with the client for visual storytelling.",
+        description: "Collaborated closely with the client for visual storytelling",
         status: "Completed",
+        title: "Visual Storytelling"
       }
     ]
   },
@@ -188,20 +210,22 @@ const projects: Project[] = [
     id: 9,
     title: "Migration of E-commerce Website",
     description:
-      "Migrated Akaso's ecommerce site from Vue to Shopify, optimizing store performance and ensuring seamless product transfers.",
+      "Migrated Akaso&apos;s ecommerce site from Vue to Shopify, optimizing store performance and ensuring seamless product transfers",
     image: "/projects/akaso1.png",
     url: "https://www.akasotech.com",
     techStack: ["Liquid", "Vue", "Javascript", "CMS"],
     more: [
       {
         image: "/projects/akaso1.png",
-        description: "Rebuilt frontend using Shopify Liquid, preserving design fidelity.",
+        description: "Rebuilt frontend using Shopify Liquid, preserving design fidelity",
         status: "Completed",
+        title: "Frontend Rebuild"
       },
       {
         image: "/projects/akaso2.png",
-        description: "Executed mass product and data migration across systems.",
+        description: "Executed mass product and data migration across systems",
         status: "Completed",
+        title: "Data Migration"
       }
     ]
   },
@@ -209,207 +233,26 @@ const projects: Project[] = [
     id: 10,
     title: "Ecommerce Website: Wagacy",
     description:
-      "Developed and optimized a CMS-based ecommerce site with a focus on SEO, user flow, and conversion insights.",
+      "Developed and optimized a CMS-based ecommerce site with a focus on SEO, user flow, and conversion insights",
     image: "/projects/wagacy1.png",
-    url: "https://github.com/yourusername/taskmanager",
-    techStack: ["CMS", "Ecommerce Tools"],
+    url: "https://wagacy.shop",
+    techStack: ["CMS", "Ecommerce Tools", "UX Design"],
     more: [
       {
         image: "/projects/wagacy1.png",
-        description: "Enhanced UX by improving mobile responsiveness and loading times.",
+        description: "Enhanced UX by improving mobile responsiveness and loading times",
         status: "Completed",
+        title: "UX Enhancement"
       },
       {
         image: "/projects/wagacy2.png",
-        description: "Analyzed sales data and applied SEO to boost visibility of best sellers.",
+        description: "Analyzed sales data and applied SEO to boost visibility of best sellers",
         status: "Completed",
+        title: "SEO Optimization"
       }
     ]
   }
 ];
-
-// const projects: Project[] = [
-//   {
-//     id: 1,
-//     title: "Livestreaming Platform",
-//     description: "A SaaS platform with real-time livestreaming, OMS system, and secure payment processing (Currently rebranded to Spree.city)",
-//     image: "/projects/carts.jpeg",
-//     url: "https://spree.city",
-//     techStack: ["React", "TypeScript", "Real-Time Integration", "PostgreSQL", "Tailwind CSS"],
-//     more: [
-//       {
-//         image: "/projects/all-chat.jpeg",
-//         description: "Livestreaming dashboard UI with real-time analytics.",
-//         status: "Completed"
-//       },
-//       {
-//         image: "/projects/carts.jpeg",
-//         description: "Order management system for sellers.",
-//         status: "Completed"
-//       }
-//     ]
-//   },
-//   {
-//     id: 2,
-//     title: "Kompaz",
-//     description: "A collaborative task management application with real-time updates and team features.",
-//     image: "/projects/kompaz1.jpg",
-//     url: "https://github.com/yourusername/taskmanager",
-//     techStack: ["React", "NextJS", "Python", "SQL", "Tailwind CSS"],
-//     more: [
-//       {
-//         image: "/projects/kompaz1.jpg",
-//         description: "Livestreaming dashboard UI with real-time analytics.",
-//         status: "In Progress"
-//       },
-//       {
-//         image: "/projects/kompaz2.jpg",
-//         description: "Order management system for sellers.",
-//         status: "In Progress"
-//       }
-//     ]
-//   },
-//   {
-//     id: 3,
-//     title: "3D Landing Page",
-//     description: "A landing page for a marketing agency",
-//     image: "/projects/goc1.png",
-//     url: "https://globaloneclick.com",
-//     techStack: ["Javascript", "ThreeJS", "Blender", "3D Rendering", "GSAP"],
-//     more: [
-//       {
-//         image: "/projects/goc1.png",
-//         description: "Integrated loader to ensure smooth user experience and low latency",
-//         status: "Completed"
-//       },
-//       {
-//         image: "/projects/goc2.png",
-//         description: "Designed, integrated and animated the 3D model",
-//         status: "Completed"
-//       }
-//     ]
-//   },
-//   {
-//     id: 4,
-//     title: "My Freelance Portfolio",
-//     description: "Capsulated: A creative portfolio for my freelance work",
-//     image: "/projects/capfirst.png",
-//     url: "https://capsulated.vercel.app",
-//     techStack: ["NextJS", "GSAP", "Tailwind CSS", "Typescript"],
-//     more: [
-//       {
-//         image: "/projects/capfirst.png",
-//         description: "Utilized GSAP with horizontal scrolling for an immersive experience",
-//         status: "Completed"
-//       },
-//       {
-//         image: "/projects/capmain.png",
-//         description: "Showcase of projects and creative works",
-//         status: "Ongoing"
-//       }
-//     ]
-//   },
-//   {
-//     id: 5,
-//     title: "Task Manager",
-//     description: "A desktop application for to-do list",
-//     image: "/projects/gary1.png",
-//     url: "https://github.com/vanessaxuuan/ip?tab=readme-ov-file",
-//     techStack: ["Java", "Shell", "Batchfile", "Gradle"],
-//     more: [
-//       {
-//         image: "/projects/gary1.png",
-//         description: "Onboarding page",
-//         status: "Completed"
-//       },
-//       {
-//         image: "/projects/gary2.png",
-//         description: "Listing of tasks",
-//         status: "Completed"
-//       }
-//     ]
-//   },
-//   {
-//     id: 6,
-//     title: "NFT Project",
-//     description: "An Ethereum collection of 88 unique NFTs",
-//     image: "/projects/nft1.png",
-//     url: "#",
-//     techStack: ["Solidity", "Javascript", "React", "Hardhat", "ERC721"],
-//     more: [
-//       {
-//         image: "/projects/nft1.png",
-//         description: "Integrated with metamask wallet for transaction",
-//         status: "Completed"
-//       },
-//       {
-//         image: "/projects/nft2.png",
-//         description: "Assisted in the crafting and deployment of the smart contracts",
-//         status: "Completed"
-//       }
-//     ]
-//   },
-//   {
-//     id: 7,
-//     title: "Landing Page: Vinifique",
-//     description: "A Display of wine curation",
-//     image: "/projects/vin1.png",
-//     url: "https://www.vinifique.co",
-//     techStack: ["NextJS", "Firebase", "Vercel"],
-//     more: [
-//       {
-//         image: "/projects/vin1.png",
-//         description: "Wine curation: Menu-style",
-//         status: "Completed"
-//       },
-//       {
-//         image: "/projects/vin2.png",
-//         description: "Creative collaboration with the client",
-//         status: "Completed"
-//       }
-//     ]
-//   },
-//   {
-//     id: 8,
-//     title: "Migration of E-commerce Website",
-//     description: "Akaso",
-//     image: "/projects/akaso1.png",
-//     url: "https://www.akasotech.com",
-//     techStack: ["Liquid", "Vue", "Javascript", "CMS"],
-//     more: [
-//       {
-//         image: "/projects/akaso1.png",
-//         description: "Migrated from Vue to Shopify (Liquid)",
-//         status: "Completed"
-//       },
-//       {
-//         image: "/projects/akaso2.png",
-//         description: "Mass Migrated all products into Shopify with data migration",
-//         status: "Completed"
-//       }
-//     ]
-//   },
-//   {
-//     id: 9,
-//     title: "Ecommerce Website: Wagacy",
-//     description: "Made with CMS and Ecommerce Tools",
-//     image: "/projects/wagacy1.png",
-//     url: "https://github.com/yourusername/taskmanager",
-//     techStack: ["CMS", "Ecommerce Tools"],
-//     more: [
-//       {
-//         image: "/projects/wagacy1.png",
-//         description: "Enhanced user experience by focusing on SEO and responsiveness",
-//         status: "Completed"
-//       },
-//       {
-//         image: "/projects/wagacy2.png",
-//         description: "Identified best sellers and imporved sales through SEO",
-//         status: "Completed"
-//       }
-//     ]
-//   },
-// ];
 
 const tangerine = Tangerine({ weight: "700", subsets: ["latin"] });
 
@@ -520,8 +363,8 @@ export default function Projects() {
                         />
                       </div>
                       <div className="flex-1 flex flex-col">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-2">{item.description}</h3>
-                        <p className="text-gray-700 mb-4">{openProject.description}</p>
+                        <h3 className="text-2xl font-bold text-gray-900 mb-2">{item.title}</h3>
+                        <p className="text-gray-700 mb-4">{item.description}</p>
                         <div className="flex flex-wrap gap-2 mb-4">
                           <span
                             key={index}
@@ -538,9 +381,13 @@ export default function Projects() {
                   href={openProject.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors mt-auto"
+                  className={`inline-flex items-center transition-colors mt-auto ${
+                    openProject.url === "#" 
+                      ? "text-gray-400 cursor-not-allowed" 
+                      : "text-blue-600 hover:text-blue-800"
+                  }`}
                 >
-                  Visit Project
+                  {openProject.url === "#" ? "Coming Soon" : "Visit Project"}
                   <svg
                     className="w-4 h-4 ml-2"
                     fill="none"

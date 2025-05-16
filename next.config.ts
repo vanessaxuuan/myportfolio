@@ -2,7 +2,12 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  devIndicators: false
+  devIndicators: false,
+  output: 'export',
+  basePath: '/myportfolio',
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

@@ -1,7 +1,9 @@
 "use client"
 
-import { Card, CardHeader } from "@heroui/react";
 import Image from "next/image";
+import { Tangerine } from "next/font/google";
+
+const tangerine = Tangerine({ weight: "700", subsets: ["latin"] });
 
 export default function Introduction() {
   return (
@@ -24,14 +26,18 @@ export default function Introduction() {
           <h2 className="text-lg sm:text-xl text-sage font-medium mt-1 font-aboreto">Software Engineer, UI/UX Designer, Web developer</h2>
           <div className="mt-6 space-y-4 text-text text-base sm:text-lg">
             <p>
-              I'm a freelance UI/UX designer and web developer with a passion for candid photograph
+              Currently working as a freelance web designer and developer
             </p>
             <p>
-              I design, code, and craft digital experiences that feel as good as they look.
+              Passionate about problem-solving and continuous learning, I&apos;m always exploring innovative solutions and seeking opportunities to apply my skills while growing as a developer
+            </p>
+            <p>
+              Occasionally co-hosting bi-monthly Sip & Scale dinners in Singapore, bringing together startup founders and entrepreneurs to foster meaningful connections and shared experiences
             </p>
           </div>
           {/* Contact Info */}
-          <ul className="mt-6 space-y-2 text-text">
+          <h3 className={`mt-8 text-4xl font-bold text-text ${tangerine.className}`}>Connect with me</h3>
+          <ul className="mt-4 space-y-2 text-text">
             <li className="flex items-center justify-center sm:justify-start gap-2">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
               <a href="vanessakhor19@gmail.com" className="hover:underline">vanessakhor19@gmail.com</a>
