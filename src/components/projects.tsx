@@ -43,10 +43,10 @@ const projects: Project[] = [
     id: 2,
     title: "Smart Order Router Simulator",
     description:
-      "Built a SOR simulator that evaluates multiple exchanges (live) to route client orders optimally based on price, volume, and latency",
+      "Building a SOR simulator that evaluates multiple exchanges (live) to route client orders optimally based on price, volume, and latency",
     image: "/projects/sor-out.png",
     url: "https://github.com/vanessaxuuan/SOR-Simulator",
-    techStack: ["C", "HeapSort", "QuickSort", "Multithreading"],
+    techStack: ["C", "O(n log n)", "Multithreading"],
     more: [
       {
         image: "/projects/sor-live.png",
@@ -62,7 +62,7 @@ const projects: Project[] = [
       },
       {
         image: "/projects/SOR.jpeg",
-        description: "An effort to deepen understanding of the technicalities of investment banking systems",
+        description: "Always open to feedback and insights from anyone keen to contribute or share ideas!",
         status: "Ongoing",
         title: "Brainstorming"
       }
@@ -139,24 +139,24 @@ const projects: Project[] = [
   },
   {
     id: 6,
-    title: "Task Manager",
+    title: "Teaching Assistant Contact Helper",
     description:
-      "CLI-based task tracking desktop app built in Java, featuring command parsing and persistent data storage",
-    image: "/projects/gary1.png",
-    url: "https://github.com/vanessaxuuan/ip?tab=readme-ov-file",
-    techStack: ["Java", "Gradle", "CLI Development"],
+      "CLI-based student contact tracking desktop app built in Java. TACH works by typing what you want to do as commands. It is optimized for keyboard users, so if you can type fast, TACH can work even faster",
+    image: "/projects/tach1.png",
+    url: "https://github.com/vanessaxuuan/tp",
+    techStack: ["Java", "CSS", "Gradle", "CLI Development"],
     more: [
       {
-        image: "/projects/gary1.png",
-        description: "Created a minimalist onboarding CLI interface for users",
+        image: "/projects/tach1.png",
+        description: "Worked on new and existing features, logic and documentation \nUser Guide: https://ay2122s2-cs2103t-w15-3.github.io/tp/UserGuide.html#quick-start",
         status: "Completed",
-        title: "Onboarding Interface"
+        title: "Main Interface"
       },
       {
-        image: "/projects/gary2.png",
-        description: "Enabled persistent task storage",
+        image: "/projects/tach2.png",
+        description: "Contributions: https://ay2122s2-cs2103t-w15-3.github.io/tp/team/vanessaxuuan.html",
         status: "Completed",
-        title: "Persistent Storage"
+        title: "A brownfield group project"
       }
     ]
   },
@@ -249,6 +249,29 @@ const projects: Project[] = [
         description: "Analyzed sales data and applied SEO to boost visibility of best sellers",
         status: "Completed",
         title: "SEO Optimization"
+      }
+    ]
+  },
+  {
+    id: 11,
+    title: "Task Manager",
+    description:
+      "CLI-based task tracking desktop app built in Java, featuring command parsing and persistent data storage",
+    image: "/projects/gary1.png",
+    url: "https://github.com/vanessaxuuan/ip?tab=readme-ov-file",
+    techStack: ["Java", "Gradle", "CLI Development", "CSS"],
+    more: [
+      {
+        image: "/projects/gary1.png",
+        description: "Created a minimalist onboarding CLI interface for users",
+        status: "Completed",
+        title: "Onboarding Interface"
+      },
+      {
+        image: "/projects/gary2.png",
+        description: "Enabled persistent task storage",
+        status: "Completed",
+        title: "Persistent Storage"
       }
     ]
   }
